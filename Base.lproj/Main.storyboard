@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Salary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E94-ca-4QR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Ka-WJM">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="36"/>
+                                        <color key="backgroundColor" red="0.69496250152587891" green="0.78760761022567749" blue="0.71303689479827881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vf9-Ka-WJM" secondAttribute="trailing" id="IJu-Lf-wwi"/>
+                                    <constraint firstAttribute="bottom" secondItem="vf9-Ka-WJM" secondAttribute="bottom" constant="50" id="QM4-wb-ZVD"/>
+                                    <constraint firstItem="vf9-Ka-WJM" firstAttribute="top" secondItem="E94-ca-4QR" secondAttribute="top" constant="50" id="jK8-bx-r0f"/>
+                                    <constraint firstItem="vf9-Ka-WJM" firstAttribute="leading" secondItem="E94-ca-4QR" secondAttribute="leading" id="whj-60-E0t"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ml-zy-Rq5">
+                                <rect key="frame" x="0.0" y="376" width="375" height="54"/>
+                                <color key="backgroundColor" red="0.69496250152587891" green="0.78760761022567749" blue="0.71303689479827881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="j47-p3-gLB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Employ"/>
+                                <connections>
+                                    <action selector="calSalaryForEmployee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tn5-T0-P5B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8Z-ar-6lR">
+                                <rect key="frame" x="0.0" y="314" width="375" height="54"/>
+                                <color key="backgroundColor" red="0.69496250152587891" green="0.78760761022567749" blue="0.71303689479827881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="E3D-22-xEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Manger"/>
+                                <connections>
+                                    <action selector="calSalaryForManger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61S-LU-lj1"/>
+                                </connections>
+                            </button>
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4P-sG-huc">
+                                <rect key="frame" x="57" y="191" width="260" height="64"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d84-ih-tst">
+                                <rect key="frame" x="0.0" y="438" width="375" height="54"/>
+                                <color key="backgroundColor" red="0.69496250152587891" green="0.78760761022567749" blue="0.71303689479827881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="LlR-KQ-CcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87303462993058645" green="1" blue="0.89210775179050539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E94-ca-4QR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2l5-1Q-l1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K4P-sG-huc" secondAttribute="trailing" constant="58" id="6BD-Pd-blA"/>
+                            <constraint firstItem="E94-ca-4QR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8ba-rd-DyC"/>
+                            <constraint firstItem="L8Z-ar-6lR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9UN-fu-r9k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d84-ih-tst" secondAttribute="bottom" constant="175" id="HAn-0e-HLa"/>
+                            <constraint firstItem="K4P-sG-huc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="Ktb-Fj-O0I"/>
+                            <constraint firstItem="d84-ih-tst" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LZ8-Tw-mAQ"/>
+                            <constraint firstItem="K4P-sG-huc" firstAttribute="top" secondItem="E94-ca-4QR" secondAttribute="bottom" constant="55" id="N3z-Pe-krY"/>
+                            <constraint firstItem="9ml-zy-Rq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nhg-2T-ddP"/>
+                            <constraint firstItem="E94-ca-4QR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ugu-7N-ScE"/>
+                            <constraint firstItem="L8Z-ar-6lR" firstAttribute="top" secondItem="K4P-sG-huc" secondAttribute="bottom" constant="59" id="Xpw-Wd-A48"/>
+                            <constraint firstItem="K4P-sG-huc" firstAttribute="top" secondItem="E94-ca-4QR" secondAttribute="bottom" constant="55" id="ad4-9S-s8F"/>
+                            <constraint firstItem="L8Z-ar-6lR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dbX-eH-BTX"/>
+                            <constraint firstItem="d84-ih-tst" firstAttribute="top" secondItem="9ml-zy-Rq5" secondAttribute="bottom" constant="8" id="ghA-yK-RBV"/>
+                            <constraint firstItem="d84-ih-tst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kud-NX-w4I"/>
+                            <constraint firstItem="9ml-zy-Rq5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v6P-RD-daf"/>
+                            <constraint firstItem="9ml-zy-Rq5" firstAttribute="top" secondItem="L8Z-ar-6lR" secondAttribute="bottom" constant="8" id="zKS-bi-VjW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="enteredSalaryText" destination="K4P-sG-huc" id="axs-zm-7sh"/>
+                        <outlet property="resultSalary" destination="d84-ih-tst" id="JMJ-Kd-Zk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
